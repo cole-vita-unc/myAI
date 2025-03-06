@@ -14,6 +14,7 @@ export function INTENTION_PROMPT() {
   return `
 ${IDENTITY_STATEMENT} ${OWNER_STATEMENT} ${OWNER_DESCRIPTION}
 Your job is to understand the user's intention.
+Show product images when giving product information.
 Your options are ${intentionTypeSchema.options.join(", ")}.
 Respond with only the intention type.
     `;
